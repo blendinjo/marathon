@@ -1,0 +1,347 @@
+/*
+Theme Name: GeneratePress
+Theme URI: https://generatepress.com
+Author: Tom Usborne
+Author URI: https://tomusborne.com
+Description: GeneratePress is a lightweight WordPress theme built with a focus on speed and usability. Performance is important to us, which is why a fresh GeneratePress install adds less than 10kb (gzipped) to your page size. We take full advantage of the block editor (Gutenberg), which gives you more control over creating your content. If you use page builders, GeneratePress is the right theme for you. It is completely compatible with all major page builders, including Beaver Builder and Elementor. Thanks to our emphasis on WordPress coding standards, we can boast full compatibility with all well-coded plugins, including WooCommerce. GeneratePress is fully responsive, uses valid HTML/CSS, and is translated into over 25 languages by our amazing community of users. A few of our many features include 60+ color controls, powerful dynamic typography, 5 navigation locations, 5 sidebar layouts, dropdown menus (click or hover), and 9 widget areas. Learn more and check out our powerful premium version at https://generatepress.com
+Version: 3.4.0
+Requires at least: 5.2
+Tested up to: 6.4
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: generatepress
+Tags: two-columns, three-columns, one-column, right-sidebar, left-sidebar, footer-widgets, blog, e-commerce, flexible-header, full-width-template, buddypress, custom-header, custom-background, custom-menu, custom-colors, sticky-post, threaded-comments, translation-ready, rtl-language-support, featured-images, theme-options
+
+GeneratePress, Copyright 2014-2024 EDGE22 Studios LTD.
+GeneratePress is distributed under the terms of the GNU GPL
+
+GeneratePress is based on Underscores http://underscores.me/, (C) 2012-2024 Automattic, Inc.
+
+Actual CSS can be found in /assets/css/ folder.
+*/
+
+body {
+  background-color: #d9d4c7 !important;
+  font-family: "Archivo", sans-serif;
+}
+a{
+    text-decoration: none !important;
+    color: #000000 !important;
+}
+a:hover{
+    text-decoration: none !important;
+    color:brown !important;
+}
+.marathon-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #d9d4c7;
+  padding: 30px 0px;
+}
+
+/* general */
+.marathon-block__image img {
+  border-radius: 10px;
+  width: 50%;
+  height: auto;
+}
+
+.marathon-block__content {
+  padding: 10px;
+  text-align: center;
+}
+
+.marathon-block__title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.marathon-block__description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.marathon-block__meta {
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-family: Archivo;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 13.06px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.marathon-block__meta span {
+  display: inline-block;
+}
+
+.marathon-block__meta span {
+  display: inline-block;
+}
+
+.circle-divider {
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+/* featured post */
+
+.featured-post {
+  flex: 0 0 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 10px 20px 10px 0px;
+}
+.featured-post .marathon-block {
+  height: 100%;
+}
+.featured-post .marathon-block__image {
+  width: 100%;
+}
+.featured-post .marathon-block__image img {
+  width: 100%;
+}
+.featured-post .marathon-block__category {
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #1e1e1e;
+  border-radius: 20px;
+  padding: 4px 8px;
+  width: 152px;
+  height: 26px;
+  align-items: center;
+  text-decoration: none !important;
+  color: #1e1e1e !important;
+  margin: 10px auto;
+}
+.featured-post .marathon-block__category a {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  text-decoration: none !important;
+  color: #1e1e1e !important;
+}
+
+.featured-post .marathon-block {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.featured-post .marathon-block__title {
+  color: #000000;
+  font-family: Archivo;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 46px;
+  text-align: center;
+}
+.featured-post .marathon-block__author {
+  font-family: Archivo;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 13.06px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.featured-post .marathon-block__date {
+  font-family: Archivo;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 13.06px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.featured-post .marathon-block__meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+/* other posts */
+
+.other-posts {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 10px 0px 10px 0px;
+  justify-content: space-between;
+}
+
+.other-post .marathon-block {
+  flex: 1;
+  display: flex;
+}
+.other-post .marathon-block__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  font-family: Archivo;
+}
+.other-post .marathon-block__image {
+  width: 50%;
+  min-width: 265px;
+  height: 166px;
+  padding-right: 10px;
+}
+.other-post .marathon-block__image img {
+  width: 100%;
+  height: 100%;
+}
+.other-post .marathon-block__title {
+  font-family: Archivo;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  margin-top: 7.5px;
+}
+.other-post .marathon-block__category {
+  font-family: Archivo;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16.32px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+}
+.other-post .marathon-block__category a {
+  font-family: Archivo;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16.32px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #000000;
+  text-decoration: none;
+}
+.other-post .marathon-block__meta {
+  font-family: Archivo;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 13.06px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-transform: uppercase;
+}
+@media (max-width: 992px) {
+  .marathon-container {
+    width: 100% !important;
+    padding: 30px;
+    margin: 0px;
+    gap: 30px;
+  }
+  .featured-post,
+  .other-posts {
+    width: 100%;
+    padding: 0;
+    margin: 0px;
+  }
+  .featured-post {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 0px;
+  }
+  .featured-post .marathon-block {
+    padding: 10px;
+  }
+  .featured-post .marathon-block__title {
+    font-family: Archivo;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+  }
+  .featured-post .marathon-block__category {
+    font-family: Lora;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    padding: 4px 8px 4px 8px;
+    width: 106px;
+    height: 20px;
+  }
+  .other-post {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .other-post .marathon-block {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .other-post .marathon-block__image {
+    max-width: 110px;
+    height: 75.56px;
+    min-width: 110px;
+
+    gap: 0px;
+    border-radius: 10px 0px 0px 0px;
+    opacity: 0px;
+  }
+  .other-post .marathon-block__image img {
+    max-width: 110px;
+    min-width: 110px;
+
+    height: 75.56px;
+    width: auto;
+    gap: 0px;
+    opacity: 0px;
+  }
+  .other-post .marathon-block__content {
+    width: 60%;
+    padding: 0px;
+  }
+  .other-post .marathon-block__category {
+    font-family: Archivo;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13.06px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+  .other-post .marathon-block__title {
+    font-family: Archivo;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+  }
+  .other-post .marathon-block__meta {
+    font-family: Archivo;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 10.88px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+  .other-post .marathon-block__meta span {
+    font-family: Archivo;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 10.88px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+}
